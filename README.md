@@ -94,7 +94,6 @@ The custom-trained YOLOv8n model has been thoroughly verified on separate valida
 | Issue / Question | Diagnostic | Solution |
 | :--- | :--- | :--- |
 | **Webcam does not open** | The camera index might be different on your hardware. | Run `python detect_live.py --source 1` (try index 1, 2, etc. if you have external USB cameras). |
-| **Low detection confidence on Webcam** | Webcam placement differs from the trained dashcam angles. | The live script defaults to a calibrated `--conf 0.05` for webcams. Adjust it using `python detect_live.py --conf 0.10` if you want higher strictness. |
 | **No audio alerts playing** | Auditory beeps are supported on Windows OS via the native system sound API. | Ensure your Windows system volume is turned up. On macOS/Linux, the warning banner flashes on-screen as a visual fallback. |
 | **PyTorch DLL Load Failures** | Windows-specific environment conflicts with PyQt5 DLL paths. | **Resolved in code**: All scripts have been built with special import logic (`import torch` executed first) to prevent this issue. |
 | **How to run on a recorded video?** | You want to process a raw driving file without launching the GUI. | Run: `python process_video.py --input your_video.mp4 --output output.mp4 --conf 0.25` |
