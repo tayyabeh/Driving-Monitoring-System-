@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+
+# Dataset Splits & YOLO Artifacts
+train/
+valid/
+test/
+runs/
+content/
+driver_distraction/
+
+# Media Files & Large Assets
+*.mp4
+*.avi
+*.mov
+*.stats.txt
+*.cache
+
+# YOLO Pretrained Weights (can be re-downloaded automatically)
+yolov8n.pt
+
+# Note: best.pt (~6.2MB) is NOT ignored so it remains in the repo
+# as a ready-to-use trained model for the client prototype.

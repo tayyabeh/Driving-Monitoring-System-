@@ -1,0 +1,14 @@
+path: .
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 10
+names: ['Adjusting_Radio_Dashboard', 'Drinking', 'Drowsiness', 'Eating', 'Hands off steering', 'Looking_Left', 'Looking_right', 'Mobile Talking', 'Mobile Texting', 'Normal_Driving']
+
+roboflow:
+  workspace: aiinoimind
+  project: car-driving-analysis
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/aiinoimind/car-driving-analysis/dataset/1

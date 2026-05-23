@@ -1,0 +1,13 @@
+# Driver Distraction Detection System - Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core Computer Vision & Deep Learning
+ultralytics>=8.1.0
+opencv-python>=4.8.0
+
+# Desktop GUI Application
+PyQt5>=5.15.0
+
+# PyTorch (For CPU environments, see installation note in README.md)
+torch
+torchvision
